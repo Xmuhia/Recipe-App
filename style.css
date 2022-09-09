@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    padding: 20px 10px;
+    margin:  auto;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    background: rgb(182, 180, 180);
+    scroll-behavior: smooth;
+
+}
+
+.logo {
+    width: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo img {
+    position: relative;
+    width: 60px;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.logo h1 {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    font-family: 'DM Serif Text', serif;
+    font-weight: 800;
+    text-overflow: ellipsis
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 4px;
+    border-radius: 48px;
+    border-radius: 5px;
+    background: #e8e8e8;
+    box-shadow:  24px 24px 48px #727272,
+             -24px -24px 48px #ffffff;
+}
+
+form input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+    
+}
+
+form i {
+    position: relative;
+    width: 10%;
+    font-size: 1rem;
+    margin: 6px;
+    padding: 2px;
+   
+    
+}
+
+.search-result {
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.item {
+    width: 100%;
+    height: 100;
+    padding: 10px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(169,251,250,0.8855917366946778) 0%, rgba(181,196,249,1) 48%, rgba(172,149,246,1) 100%);
+    transition: 1s ease;
+}
+
+.item:hover {
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.item:hover  .item-data{   
+    transform: scaleY(30px);
+    position: relative;
+    transition: 1s ease;
+}
+
+.item:hover  .food-details {
+    transform: translateY(-40px);
+    top: 0;
+    margin-top: 0;
+    transition: 1s ease;
+}
+
+.item:hover img {
+    padding: 0;
+    margin: 0;
+    transform: scale(0.8);
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.item:hover p {
+    transform: translateY(-40px);
+    top: 0;
+    margin-top: 0;
+    transition: 1s ease;
+}
+
+.item img {
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.item .food-details {
+    display:flex;
+    justify-content: space-between;
+    grid-template-columns: 4fr 1fr;
+    
+}
+
+
+.item .title {
+    font-family: 'DM Serif Text', serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 2px;
+    text-overflow: ellipsis
+}
+.view-button {
+	cursor:pointer;
+    display: inline;
+	color:#0019fd;
+	font-size:15px;
+	font-weight: 500;
+	padding: 7px;
+	text-decoration:none;
+    outline: none;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 50px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  10px 10px 20px #7e7c7c,
+             -10px -10px 20px #cccccc;
+    justify-content: space-between;
+    max-height: 28px;
+    white-space: nowrap;
+}
+
+
+.item-data {
+    margin: 3px 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    padding: 2px 7px;
+    width: 150px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(248,108,255,0.8855917366946778) 0%, rgba(188,204,192,1) 52%, rgba(54,234,238,1) 100%);
+}
